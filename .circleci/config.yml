@@ -25,6 +25,9 @@ jobs:
           name: Build
           command: mvn -B -DskipTests clean package
       # Then run your tests!
+      - run:
+          name: Unit Tests
+          command: mvn -Dtest=UnitTestUserServiceTest -Dsurefire.printSummary=true test
 
 
 # Orchestrate jobs using workflows

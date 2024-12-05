@@ -28,7 +28,7 @@ import com.mayab.quality.loginunittest.service.UserService;
 
 
 
-class UserServiceTest {
+class UnitTestUserServiceTest {
 	
 	private UserService service;
 	private IDAOUser dao;
