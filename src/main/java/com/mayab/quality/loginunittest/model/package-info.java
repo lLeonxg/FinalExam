@@ -1,0 +1,1 @@
+package com.mayab.quality.loginunittest.model;
