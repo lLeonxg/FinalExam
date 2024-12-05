@@ -39,7 +39,9 @@ jobs:
       - run:
           name: Unit Tests
           command: mvn -Dtest=UnitTestUserServiceTest -Dsurefire.printSummary=true test
-
+      - run:
+          name: integration Tests
+          command: mvn -Dtest=IntegrationTestUserServiceTest -Dsurefire.printSummary=true test
       - run:
           name: Functional Tests
           command: mvn -Dtest=MernTest -Dsurefire.printSummary=true test
