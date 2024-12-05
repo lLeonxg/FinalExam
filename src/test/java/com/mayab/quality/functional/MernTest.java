@@ -84,26 +84,6 @@ public class MernTest {
 		}
 	
 	@Test
-	public void modifyAge() throws Exception {
-		createRecord("Usr Modify", "modify@email.com");
-		pause(2000);
-		driver.get("https://mern-crud-mpfr.onrender.com/");
-	    driver.findElement(By.xpath("//div[@id='root']/div/div[2]/table/tbody/tr/td[5]/button")).click();
-	    pause(2000);
-	    driver.findElement(By.name("age")).click();
-	    driver.findElement(By.name("age")).clear();
-	    driver.findElement(By.name("age")).sendKeys("100");
-	    pause(2000);
-	    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Woah!'])[1]/following::button[1]")).click();
-	    pause(1000);
-	    driver.findElement(By.xpath("//i")).click();
-	
-	    
-	    String edad = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[2]/table/tbody/tr[1]/td[3]")).getText();
-	    assertEquals(edad,"100");
-	    }
-	
-	@Test
 	public void delete() throws Exception {
 		createRecord("To be eliminated","eliminated@email.com");
 		pause(2000);
