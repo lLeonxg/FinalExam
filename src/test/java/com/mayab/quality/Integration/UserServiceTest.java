@@ -40,6 +40,7 @@ class UserServiceTest extends DBTestCase{
 	@BeforeEach
 	protected
 	void setUp() throws Exception {
+		
 		// Initialize DAO
 		dao = new UserMysqlDAO();
 		service = new UserService(dao);

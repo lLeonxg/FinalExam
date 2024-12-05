@@ -35,7 +35,7 @@ public class UserMysqlDAO implements IDAOUser{
 
 		try {
 			// Declare statement query to run
-			preparedStatement = connection.prepareStatement("SELECT * from UsuariosSushi WHERE name = ?");
+			preparedStatement = connection.prepareStatement("SELECT * from usuarios WHERE name = ?");
 			// Set the values to match in the ? on query
 			preparedStatement.setString(1, name);
 			rs = preparedStatement.executeQuery();
@@ -81,7 +81,7 @@ public class UserMysqlDAO implements IDAOUser{
 			// Declare statement query to run
 			PreparedStatement preparedStatement;
 			preparedStatement = connection
-					.prepareStatement("insert INTO UsuariosSushi(name,email,password,isLogged) values(?,?,?,?)",
+					.prepareStatement("insert INTO usuarios(name,email,password,isLogged) values(?,?,?,?)",
 							Statement.RETURN_GENERATED_KEYS);
 			// Set the values to match in the ? on query
 			preparedStatement.setString(1, user.getName());
@@ -121,7 +121,7 @@ public class UserMysqlDAO implements IDAOUser{
 
 		try {
 			// Declare statement query to run
-			preparedStatement = connection.prepareStatement("SELECT * from UsuariosSushi WHERE email = ?");
+			preparedStatement = connection.prepareStatement("SELECT * from usuarios WHERE email = ?");
 			// Set the values to match in the ? on query
 			preparedStatement.setString(1, email);
 			rs = preparedStatement.executeQuery();
@@ -172,7 +172,7 @@ public class UserMysqlDAO implements IDAOUser{
 		  
 		  try {
 		   // Declare statement query to run
-		   preparedStatement = connection.prepareStatement("SELECT * from UsuariosSushi");
+		   preparedStatement = connection.prepareStatement("SELECT * from usuarios");
 		   // Set the values to match in the ? on query
 		   rs = preparedStatement.executeQuery();
 
@@ -213,7 +213,7 @@ public class UserMysqlDAO implements IDAOUser{
 
 		try {
 			// Declare statement query to run
-			preparedStatement = connection.prepareStatement("SELECT * from UsuariosSushi WHERE id = ?");
+			preparedStatement = connection.prepareStatement("SELECT * from usuarios WHERE id = ?");
 			// Set the values to match in the ? on query
 			preparedStatement.setInt(1, id);
 			rs = preparedStatement.executeQuery();
@@ -259,7 +259,7 @@ public class UserMysqlDAO implements IDAOUser{
 		try {
 			// Declare statement query to run
 			PreparedStatement preparedStatement;
-			preparedStatement = connection.prepareStatement("Delete from UsuariosSushi WHERE id = ?");
+			preparedStatement = connection.prepareStatement("Delete from usuarios WHERE id = ?");
 			// Set the values to match in the ? on query
 			preparedStatement.setInt(1, id);
 
@@ -290,7 +290,7 @@ public class UserMysqlDAO implements IDAOUser{
 		try {
 			// Declare statement query to run
 			PreparedStatement preparedStatement;
-			preparedStatement = connection.prepareStatement("UPDATE UsuariosSushi SET name = ?,password= ? WHERE id = ?");
+			preparedStatement = connection.prepareStatement("UPDATE usuarios SET name = ?,password= ? WHERE id = ?");
 			// Set the values to match in the ? on query
 			preparedStatement.setString(1, userNew.getName());
 			preparedStatement.setString(2, userNew.getPassword());
