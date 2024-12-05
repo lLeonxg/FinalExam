@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <usuarios ID="1" USERNAME="username1" PASSWORD="12345678" EMAIL="email1@email.com" ISLOGGED="0"/>
+    <usuarios ID="2" USERNAME="NEWUSERNAME" PASSWORD="NEWPASS" EMAIL="email2@email.com" ISLOGGED="0"/>
+    <usuarios ID="3" USERNAME="username3" PASSWORD="12345678" EMAIL="email3@email.com" ISLOGGED="0"/>
+    <usuarios ID="4" USERNAME="username4" PASSWORD="12345678" EMAIL="email4@email.com" ISLOGGED="0"/>
+</dataset>
