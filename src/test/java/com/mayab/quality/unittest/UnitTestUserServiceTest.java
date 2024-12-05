@@ -118,6 +118,9 @@ class UnitTestUserServiceTest {
 		
 		//VERIFICATION
 		assertThat(newUser, (notNullValue()));
+		assertThat(newUser.getName(), is(name));       
+		assertThat(newUser.getEmail(), is(email));
+		assertThat(newUser.getPassword(), is(pass));
 		
 	}
 	
@@ -169,6 +172,8 @@ class UnitTestUserServiceTest {
 		
 		//VERIFICATION
 		assertThat(deleted, is(true));
+		User foundUser = service.findUserById(id);
+	    assertThat(foundUser, is(nullValue()));
 	}
 	
 	@Test
