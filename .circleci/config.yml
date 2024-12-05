@@ -26,7 +26,7 @@ jobs:
 
       - run:
           name: Create database 
-          command: mysql -h 127.0.0.1 -u root -p123456 calidad < src/resources/crearDB.sql
+          command: mysql -h 127.0.0.1 -u root -p123456 calidadSoftware2024 < src/resources/crearDB.sql
 
       - run:
           name: Download Selenium
