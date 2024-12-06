@@ -61,7 +61,7 @@ class UnitTestUserServiceTest {
 		User expected = null;
 		
 		//VERIFICATION
-		assertThat(user, is(expected));
+		assertThat(user, is(nullValue()));
 	}
 	
 	@Test
