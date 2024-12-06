@@ -40,6 +40,9 @@ jobs:
           name: Functional Tests
           command: mvn -Dtest=MernTest -Dsurefire.printSummary=true test
 
+      - store_test_results:
+          path: target/surefire-reports
+
   deployment:
     docker:
       - image: cimg/openjdk:17.0
@@ -60,3 +63,5 @@ workflows:
             branches:
               only:
                 - main
+
+                
