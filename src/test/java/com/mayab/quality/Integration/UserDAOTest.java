@@ -68,11 +68,11 @@ UserMysqlDAO daoMySql;
 				IDataSet databaseDataSet = conn.createDataSet(); 
 				String[] tablas = databaseDataSet.getTableNames();
 				
-				ITable actualTable = databaseDataSet.getTable("usuariosQuesadillas");
+				ITable actualTable = databaseDataSet.getTable("UsuariosSushi");
 				
 				// Read XML with the expected result
 				IDataSet expectedDataSet = new FlatXmlDataSetBuilder().build(new File("src/resources/create.xml"));
-				ITable expectedTable = expectedDataSet.getTable("usuariosQuesadillas");
+				ITable expectedTable = expectedDataSet.getTable("UsuariosSushi");
 				
 				Assertion.assertEquals(expectedTable, actualTable);
 				

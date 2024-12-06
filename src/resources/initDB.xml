@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset>
-    <usuarios id="1" username="username1" password="12345678" email="email1@email.com" isLogged="0"/>
-    <usuarios id="2" username="username2" password="12345678" email="email2@email.com" isLogged="0"/>
-    <usuarios id="3" username="username3" password="12345678" email="email3@email.com" isLogged="0"/>
-    <usuarios id="4" username="username4" password="12345678" email="email4@email.com" isLogged="0"/>
+<UsuariosSushi/>
 </dataset>
