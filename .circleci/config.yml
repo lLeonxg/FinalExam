@@ -4,10 +4,6 @@ jobs:
   build-and-test:
     docker:
       - image: cimg/openjdk:17.0-browsers
-      - image: mysql:5.7
-        environment:
-          MYSQL_ROOT_PASSWORD: 123456
-          MYSQL_DATABASE: calidadSoftware2024
 
     steps:
       - checkout
