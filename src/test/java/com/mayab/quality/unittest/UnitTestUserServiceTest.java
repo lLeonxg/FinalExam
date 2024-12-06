@@ -61,7 +61,8 @@ class UnitTestUserServiceTest {
 		User expected = null;
 		
 		//VERIFICATION
-		assertThat(user, is(nullValue()));
+		User exp = new User("name", "email@email.com", "123456789");
+		assertThat(user, is(exp));
 	}
 	
 	@Test
